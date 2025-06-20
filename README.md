@@ -1,40 +1,49 @@
-# AI Town 🏠💻💌
+# SYRP-DGM AI Town 🏠💻💌 (v3.9)
 
-[Live Demo](https://www.convex.dev/ai-town)
+[Live Demo](https://aiforsocialbenefit.xyz/syrp-dgm)
 
-[Join our community Discord: AI Stack Devs](https://discord.gg/PQUmTBTGmT)
+[Join our community Discord: AI Stack Devs](https://aiforsocialbenefit.xyz/syrp-dgm)
 
 <img width="1454" alt="Screen Shot 2023-08-14 at 10 01 00 AM" src="https://github.com/a16z-infra/ai-town/assets/3489963/a4c91f17-23ed-47ec-8c4e-9f9a8505057d">
 
-AI Town is a virtual town where AI characters live, chat and socialize.
+SYRP-DGM AI Town is a virtual town where AI characters live, chat and socialize, all governed by a self-improving reputation system.
 
-This project is a deployable starter kit for easily building and customizing your own version of AI
-town. Inspired by the research paper
-[_Generative Agents: Interactive Simulacra of Human Behavior_](https://arxiv.org/pdf/2304.03442.pdf).
+This project is a deployable starter kit for easily building and customizing your own version of AI town. Inspired by the research paper
+[_Generative Agents: Interactive Simulacra of Human Behavior_](https://arxiv.org/pdf/2304.03442.pdf) and now fully upgraded to incorporate the principles from [_SYRP-DGM: A Self-Improving Gödelian Reputation Protocol for AI Agents_](research-paper-syrp-dgm/SYRP-DGM%20A%20Self-Improving%20G%C3%B6delian%20Reputation%20Protocol%20for%20AI%20Agents.md).
 
-## A New Frontier in AI Town: The SYRP-DGM Protocol
+## A New Frontier in AI Town: The SYRP-DGM Protocol (v3.9 Update)
 
-**A groundbreaking shift is coming to AI Town, transforming it from a social simulation into a dynamic, self-improving ecosystem for trust and reputation. By integrating the principles of the "SYRP-DGM: A Self-Improving Gödelian Reputation Protocol for AI Agents," AI Town will become a living laboratory for exploring how artificial intelligence can autonomously develop, refine, and enforce complex social contracts.**
+**A groundbreaking shift has come to AI Town, transforming it from a social simulation into a dynamic, self-improving ecosystem for trust and reputation. By integrating the principles of the "SYRP-DGM: A Self-Improving Gödelian Reputation Protocol for AI Agents," AI Town has become a living laboratory for exploring how artificial intelligence can autonomously develop, refine, and enforce complex social contracts.**
 
-This ambitious undertaking will see the core mechanics of AI Town refactored to run on the SYRP-DGM protocol. This protocol combines a "Stake Your Reputation" system with the evolutionary power of a Darwin Gödel Machine (DGM). The DGM is a theoretical concept for an AI that can improve its own code, and in this new AI Town, its principles will be used to allow the AI agents to collaboratively evolve their own rules for reputation and interaction.
+This ambitious undertaking has seen the core mechanics of AI Town refactored to run on the SYRP-DGM protocol. This protocol combines a "Stake Your Reputation" system with the evolutionary power of a Darwin Gödel Machine (DGM). The DGM is a theoretical concept for an AI that can improve its own code, and in this new AI Town, its principles are used to allow the AI agents to collaboratively evolve their own rules for reputation and interaction.
 
 ### Key Concepts of the SYRP-DGM Framework:
 
-At its heart, the new AI Town will be a reputation-based economy. Agents will need to "stake" their reputation to engage in various activities, from business transactions to social interactions. This reputation will be a dynamic score that reflects their past behavior and the trust other agents place in them.
+At its heart, the new AI Town is a reputation-based economy. Agents need to "stake" their reputation to engage in various activities, from business transactions to social interactions. This reputation is a dynamic score that reflects their past behavior and the trust other agents place in them.
 
-The "Darwin Gödel Machine" aspect introduces a revolutionary self-improvement loop. The AI agents will collectively function as a DGM, constantly evaluating the effectiveness of their reputation system and proposing modifications to its underlying code. This means the rules of the town won't be static; they will evolve over time as the agents learn and adapt.
+The "Darwin Gödel Machine" aspect introduces a revolutionary self-improvement loop, now implemented in the `convex/dgm` directory. The AI agents collectively function as a DGM, constantly evaluating the effectiveness of their reputation system and proposing modifications to its underlying code. This means the rules of the town aren't static; they evolve over time as the agents learn and adapt. This evolutionary cycle is driven by a cron job that periodically:
 
-This evolutionary process will be guided by a "constitution"—a set of core principles that ensure the system remains fair, transparent, and aligned with desirable social outcomes. This "Constitutional AI" approach is designed to prevent the system from developing harmful or exploitative behaviors.
+1.  **Selects** a high-performing reputation logic from an archive.
+
+2.  **Proposes** improvements using an LLM guided by a foundational "constitution."
+
+3.  **Benchmarks** the new logic in simulated scenarios to validate its effectiveness.
+
+4.  **Archives** successful new logics, allowing the system to grow more sophisticated over time.
+
+This evolutionary process is guided by a "constitution"—a set of core principles defined in `convex/dgm/constitution.ts` that ensures the system remains fair, transparent, and aligned with desirable social outcomes. This "Constitutional AI" approach is designed to prevent the system from developing harmful or exploitative behaviors.
 
 ### A More Realistic and Resilient AI Society:
 
-This new framework will allow for the simulation of complex social and economic phenomena, including the emergence of trust, the consequences of betrayal, and the ongoing "evolutionary arms race" between cooperative and malicious actors. The system will be designed to be resilient against common attacks on reputation systems, such as:
+This new framework allows for the simulation of complex social and economic phenomena, including the emergence of trust, the consequences of betrayal, and the ongoing "evolutionary arms race" between cooperative and malicious actors. The system is designed to be resilient against common attacks on reputation systems, such as:
 
 *   **Sybil Attacks:** Where a single entity creates multiple fake identities to gain undue influence.
+
 *   **Slandering (or "Bad-mouthing"):** Where malicious actors spread false negative information to harm others' reputations.
+
 *   **Whitewashing:** Where an agent with a poor reputation attempts to start fresh with a new identity.
 
-By allowing the AI agents to evolve their own defenses, the new AI Town will provide a powerful tool for researching how to build more robust and trustworthy online communities.
+By allowing the AI agents to evolve their own defenses, the new AI Town provides a powerful tool for researching how to build more robust and trustworthy online communities.
 
 The primary goal of this project, beyond just being a lot of fun to work on, is to provide a
 platform with a strong foundation that is meant to be extended. The back-end natively supports
@@ -46,16 +55,22 @@ above) are written in Python.
 ## Overview
 
 - 💻 [Stack](#stack)
+
 - 🧠 [Installation](#installation) (cloud, local, Docker, self-host, Fly.io, ...)
+
 - 💻️ [Windows Pre-requisites](#windows-installation)
+
 - 🤖 [Configure your LLM of choice](#connect-an-llm) (Ollama, OpenAI, Together.ai, ...)
+
 - 👤 [Customize - YOUR OWN simulated world](#customize-your-own-simulation)
+
 - 👩‍💻 [Deploying to production](#deploy-the-app-to-production)
+
 - 🐛 [Troubleshooting](#troubleshooting)
 
 ## Getting Started
 
-This guide will walk you through setting up and running AI Town locally, as well as deploying it to production.
+This guide will walk you through setting up and running SYRP-DGM AI Town locally, as well as deploying it to production.
 
 ### Running Locally
 
@@ -104,11 +119,24 @@ To add new characters to the town, you can modify the `data/characters.ts` file.
 ## Stack
 
 - Game engine, database, and vector search: [Convex](https://convex.dev/)
+
+- **SYRP-DGM Framework (v3.9):** A self-improving reputation system featuring:
+
+    - **Evolutionary Engine:** An automated process for evolving reputation logic, located in `convex/dgm/`.
+
+    - **Constitutional AI:** A set of guiding principles in `convex/dgm/constitution.ts` to ensure safe and ethical evolution.
+
+    - **Reputation Logic Archive:** A `reputationLogics` table for storing and versioning different reputation models.
+
 - Auth (Optional): [Clerk](https://clerk.com/)
+
 - Default chat model is `llama3` and embeddings with `mxbai-embed-large`.
+
 - Local inference: [Ollama](https://github.com/jmorganca/ollama)
+
 - Configurable for other cloud LLMs: [Together.ai](https://together.ai/) or anything that speaks the
   [OpenAI API](https://platform.openai.com/). PRs welcome to add more cloud provider support.
+
 - Background Music Generation: [Replicate](https://replicate.com/) using
   [MusicGen](https://huggingface.co/spaces/facebook/MusicGen)
 
@@ -116,14 +144,20 @@ Other credits:
 
 - Pixel Art Generation: [Replicate](https://replicate.com/),
   [Fal.ai](https://serverless.fal.ai/lora)
+
 - All interactions, background music and rendering on the <Game/> component in the project are
   powered by [PixiJS](https://pixijs.com/).
+
 - Tilesheet:
   - https://opengameart.org/content/16x16-game-assets by George Bailey
+
   - https://opengameart.org/content/16x16-rpg-tileset by hilau
+
 - We used https://github.com/pierpo/phaser3-simple-rpg for the original POC of this project. We have
   since re-wrote the whole app, but appreciated the easy starting point
+
 - Original assets by [ansimuz](https://opengameart.org/content/tiny-rpg-forest)
+
 - The UI is based on original assets by
   [Mounir Tohami](https://mounirtohami.itch.io/pixel-art-gui-elements)
 
@@ -132,6 +166,7 @@ Other credits:
 The overall steps are:
 
 1. [Build and deploy](#build-and-deploy)
+
 2. [Connect it to an LLM](#connect-an-llm)
 
 ## Build and Deploy
@@ -140,12 +175,11 @@ There are a few ways to run the app on top of Convex (the backend).
 
 1. The standard Convex setup, where you develop locally or in the cloud. This requires a Convex
    account(free). This is the easiest way to depoy it to the cloud and seriously develop.
+
 2. If you want to try it out without an account and you're okay with Docker, the Docker Compose
    setup is nice and self-contained.
-3. There's a community fork of this project offering a one-click install on
-   [Pinokio](https://pinokio.computer/item?uri=https://github.com/cocktailpeanutlabs/aitown) for
-   anyone interested in running but not modifying it 😎.
-4. You can also deploy it to [Fly.io](https://fly.io/). See [./fly](./fly) for instructions.
+
+3. You can also deploy it to [Fly.io](https://fly.io/). See [./fly](./fly) for instructions.
 
 ### Standard Setup
 
@@ -162,8 +196,7 @@ This will require logging into your Convex account, if you haven't already.
 To run it:
 
 ```sh
-npm run dev
-```
+pnpm or npm run dev```
 
 You can now visit http://localhost:5173.
 
@@ -171,8 +204,8 @@ If you'd rather run the frontend and backend separately (which syncs your backen
 they're saved), you can run these in two terminals:
 
 ```bash
-npm run dev:frontend
-npm run dev:backend
+pnpm or npm run dev:frontend
+pnpm or npm run dev:backend
 ```
 
 See [package.json](./package.json) for details.
@@ -211,13 +244,13 @@ CONVEX_SELF_HOSTED_URL="http://127.0.0.1:3210"
 Then set up the Convex backend (one time):
 
 ```sh
-npm run predev
+pnpm or npm run predev
 ```
 
 To continuously deploy new code to the backend and print logs:
 
 ```sh
-npm run dev:backend
+pnpm or npm run dev:backend
 ```
 
 To see the dashboard, visit `http://localhost:6791` and provide the admin key you generated earlier.
@@ -250,9 +283,12 @@ OpenAI or Together.ai or you can proxy the traffic from the cloud to your local 
 By default, the app tries to use Ollama to run it entirely locally.
 
 1. Download and install [Ollama](https://ollama.com/).
+
 2. Open the app or run `ollama serve` in a terminal. `ollama serve` will warn you if the app is
    already running.
+
 3. Run `ollama pull llama3` to have it download `llama3`.
+
 4. Test it out with `ollama run llama3`.
 
 Ollama model options can be found [here](https://ollama.ai/library).
@@ -262,6 +298,7 @@ If you want to customize which model to use, adjust convex/util/llm.ts or set
 
 1. Change the `OLLAMA_EMBEDDING_DIMENSION` in `convex/util/llm.ts` and ensure:
    `export const EMBEDDING_DIMENSION = OLLAMA_EMBEDDING_DIMENSION;`
+
 2. Set `npx convex env set OLLAMA_EMBEDDING_MODEL # model`.
 
 Note: You might want to set `NUM_MEMORIES_TO_SEARCH` to `1` in constants.ts, to reduce the size of
@@ -390,6 +427,7 @@ all of your data.
    `convex/crons.ts`.
 
    - Change the background music by modifying the prompt in `convex/music.ts`
+
    - Change how often to generate new music at `convex/crons.ts` by modifying the
      `generate new background music` job
 
@@ -493,6 +531,7 @@ Before you can run the app, you will need to make sure the Convex functions are 
 production environment. Note: this is assuming you're using the default Convex cloud product.
 
 1. Run `npx convex deploy` to deploy the convex functions to production
+
 2. Run `npx convex run init --prod`
 
 To transfer your local data to the cloud, you can run `npx convex export` and then import it with
@@ -509,8 +548,11 @@ to remove it.
 **Make a Clerk account**
 
 - Go to https://dashboard.clerk.com/ and click on "Add Application"
+
 - Name your application and select the sign-in providers you would like to offer users
+
 - Create Application
+
 - Add `VITE_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` to `.env.local`
 
 ```bash
@@ -528,9 +570,11 @@ npx convex env set CLERK_ISSUER_URL # e.g. https://your-issuer-url.clerk.account
 ### Deploy the frontend to Vercel
 
 - Register an account on Vercel and then [install the Vercel CLI](https://vercel.com/docs/cli).
+
 - **If you are using Github Codespaces**: You will need to
   [install the Vercel CLI](https://vercel.com/docs/cli) and authenticate from your codespaces cli by
   running `vercel login`.
+
 - Deploy the app to Vercel with `vercel --prod`.
 
 ## Using local inference from a cloud deployment
@@ -555,10 +599,13 @@ Steps:
 
 You can install Tunnelmole using one of the following options:
 
-- NPM: `npm install -g tunnelmole`
+- NPM: `pmpm or npm install -g tunnelmole`
+
 - Linux: `curl -s https://tunnelmole.com/sh/install-linux.sh | sudo bash`
+
 - Mac:
   `curl -s https://tunnelmole.com/sh/install-mac.sh --output install-mac.sh && sudo bash install-mac.sh`
+  
 - Windows: Install with NPM, or if you don't have NodeJS installed, download the `exe` file for
   Windows [here](https://tunnelmole.com/downloads/tmole.exe) and put it somewhere in your PATH.
 
@@ -706,8 +753,7 @@ If you wan to investigate inside the container, you can launch an interactive Do
 the `frontend`, `backend` or `dashboard` service:
 
 ```bash
-docker compose exec frontend /bin/bash
-```
+docker compose exec frontend /bin/bash```
 
 To exit the container, run `exit`.
 
@@ -780,3 +826,7 @@ and [runtime validation](https://docs.convex.dev/database/schemas#validators) fo
 [database data](https://docs.convex.dev/database/schemas#schema-validation).
 
 Everything scales automatically, and it’s [free to start](https://www.convex.dev/plans).
+```
+
+---
+
