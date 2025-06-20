@@ -1,9 +1,5 @@
 # SYRP-DGM AI Town 🏠💻💌 (v3.9)
 
-[Live Demo](https://aiforsocialbenefit.xyz/syrp-dgm)
-
-[Join our community Discord: AI Stack Devs](https://aiforsocialbenefit.xyz/syrp-dgm)
-
 <img width="1454" alt="Screen Shot 2023-08-14 at 10 01 00 AM" src="https://github.com/a16z-infra/ai-town/assets/3489963/a4c91f17-23ed-47ec-8c4e-9f9a8505057d">
 
 SYRP-DGM AI Town is a virtual town where AI characters live, chat and socialize, all governed by a self-improving reputation system.
