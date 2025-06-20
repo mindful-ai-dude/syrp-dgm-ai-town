@@ -826,7 +826,3 @@ and [runtime validation](https://docs.convex.dev/database/schemas#validators) fo
 [database data](https://docs.convex.dev/database/schemas#schema-validation).
 
 Everything scales automatically, and it’s [free to start](https://www.convex.dev/plans).
-```
-
----
-
