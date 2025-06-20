@@ -1,4 +1,5 @@
 # **SYRP-DGM: A Self-Improving Gödelian Reputation Protocol for AI Agents** 
+# **A Self-Improving Gödelian Reputation Protocol for AI Agents** 
 Author / Developer, Gregory Kennedy (SYRP co-creator, Dr. Justin smith)
 
 Abstract  
