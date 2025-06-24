@@ -5,7 +5,9 @@
 SYRP-DGM AI Town is a virtual town where AI characters live, chat and socialize, all governed by a self-improving reputation system - Gregory Kennedy
 
 This project is a deployable starter kit for easily building and customizing your own version of AI town. Inspired by the research paper
-[_Generative Agents: Interactive Simulacra of Human Behavior_](https://arxiv.org/pdf/2304.03442.pdf) and now fully upgraded to incorporate the principles from [_SYRP-DGM: A Self-Improving Gödelian Reputation Protocol for AI Agents_](research-paper-syrp-dgm/SYRP-DGM%20A%20Self-Improving%20G%C3%B6delian%20Reputation%20Protocol%20for%20AI%20Agents.md).
+[_Generative Agents: Interactive Simulacra of Human Behavior_](https://arxiv.org/pdf/2304.03442.pdf) and now fully upgraded to incorporate the principles from Gregory Kennedy's
+
+[_SYRP-DGM: A Self-Improving Gödelian Reputation Protocol for AI Agents_](research-paper-syrp-dgm/SYRP-DGM%20A%20Self-Improving%20G%C3%B6delian%20Reputation%20Protocol%20for%20AI%20Agents.md).
 
 ## A New Frontier in AI Town: The SYRP-DGM Protocol (v3.9 Update)
 
