@@ -4,14 +4,14 @@
 
 SYRP-DGM AI Town is a virtual town where AI characters live, chat and socialize, all governed by a self-improving reputation system - Gregory Kennedy
 
-This project is a deployable starter kit for easily building and customizing your own version of AI town. Inspired by the research paper
-[_Generative Agents: Interactive Simulacra of Human Behavior_](https://arxiv.org/pdf/2304.03442.pdf) and now fully upgraded to incorporate the principles from Gregory Kennedy's
+Forked from the AI Town Open Source project that was Inspired by the research paper
+[_Generative Agents: Interactive Simulacra of Human Behavior_](https://arxiv.org/pdf/2304.03442.pdf) and now fully updated to incorporate the principles and math from Gregory Kennedy's
 
 [_SYRP-DGM: A Self-Improving Gödelian Reputation Protocol for AI Agents_](research-paper-syrp-dgm/SYRP-DGM%20A%20Self-Improving%20G%C3%B6delian%20Reputation%20Protocol%20for%20AI%20Agents.md) research paper
 
 ## A New Frontier in AI Town: The SYRP-DGM Protocol (v3.9 Update)
 
-**A groundbreaking shift has come to AI Town, transforming it from a social simulation into a dynamic, self-improving ecosystem for trust and reputation. By integrating the principles of the "SYRP-DGM: A Self-Improving Gödelian Reputation Protocol for AI Agents," AI Town has become a living laboratory for exploring how artificial intelligence can autonomously develop, refine, and enforce complex social contracts.**
+**A groundbreaking shift has come to AI Town, transforming it from a social simulation into a dynamic, self-improving ecosystem for trust and reputation. By integrating the principles of the "SYRP-DGM: A Self-Improving Gödelian Reputation Protocol for AI Agents research paper by Gregory Kennedy," AI Town has become a living laboratory for exploring how artificial intelligence can autonomously develop, refine, and enforce complex social contracts.**
 
 This ambitious undertaking has seen the core mechanics of AI Town refactored to run on the SYRP-DGM protocol. This protocol combines a "Stake Your Reputation" system with the evolutionary power of a Darwin Gödel Machine (DGM). The DGM is a theoretical concept for an AI that can improve its own code, and in this new AI Town, its principles are used to allow the AI agents to collaboratively evolve their own rules for reputation and interaction.
 
