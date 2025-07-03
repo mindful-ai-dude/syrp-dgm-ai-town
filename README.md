@@ -2,7 +2,7 @@
 
 <img width="1454" alt="Screen Shot 2023-08-14 at 10 01 00 AM" src="https://github.com/a16z-infra/ai-town/assets/3489963/a4c91f17-23ed-47ec-8c4e-9f9a8505057d">
 
-SYRP-DGM AI Town is a virtual town where AI characters live, chat and socialize, all governed by a self-improving reputation system - Gregory Kennedy
+SYRP-DGM AI Town is a virtual town where AI characters live, chat and socialize, all governed by a self-improving reputation system
 
 Forked from the AI Town Open Source project that was Inspired by the research paper
 [_Generative Agents: Interactive Simulacra of Human Behavior_](https://arxiv.org/pdf/2304.03442.pdf) and now fully updated to incorporate the principles and math from Gregory Kennedy's
