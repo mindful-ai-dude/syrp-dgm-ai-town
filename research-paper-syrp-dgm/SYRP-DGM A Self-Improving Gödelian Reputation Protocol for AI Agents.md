@@ -1,5 +1,4 @@
-# **SYRP-DGM: A Self-Improving Gödelian Reputation Protocol for AI Agents**
-# **v3.99**
+# **SYRP-DGM: A Self-Improving Gödelian Reputation Protocol for AI Agents v3.99**
 
 ### **Gregory Kennedy**
 
